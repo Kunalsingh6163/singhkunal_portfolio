@@ -35,6 +35,7 @@ function About() {
                   alt="Developer workspace illustration"
                   width={420}
                   height={360}
+                  sizes="(max-width: 900px) 80vw, 420px"
                   style={{ height: "auto", maxWidth: "100%" }}
                 />
               </Box>

@@ -201,7 +201,7 @@ export const PROJECTS = [
   },
   {
     title: "Cab24",
-    image: "/cab24.png",
+    image: "/cab24.webp",
     description:
       "Built a cab booking application and management system with React Native, Next.js, Node.js, and MongoDB.",
     technologies: [

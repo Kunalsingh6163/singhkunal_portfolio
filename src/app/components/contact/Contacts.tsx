@@ -15,7 +15,11 @@ import PlaceRoundedIcon from "@mui/icons-material/PlaceRounded";
 function Contacts() {
   const contactItems = [
     { icon: <PlaceRoundedIcon />, label: CONTACTS.Address },
-    { icon: <LocalPhoneRoundedIcon />, label: CONTACTS.Phone },
+    {
+      icon: <LocalPhoneRoundedIcon />,
+      label: CONTACTS.Phone,
+      href: `tel:${CONTACTS.Phone.replace(/\s+/g, "")}`,
+    },
     { icon: <EmailRoundedIcon />, label: CONTACTS.Email, href: `mailto:${CONTACTS.Email}` },
   ];
 

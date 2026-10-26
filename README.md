@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kunal Singh Portfolio
 
-## Getting Started
+Production-ready Next.js 15 portfolio, prepared for Vercel.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Name | Required | Purpose |
+| --- | --- | --- |
+| `GMAIL_USER` | Yes (contact form) | Gmail address that receives messages |
+| `GMAIL_PASS` | Yes (contact form) | Gmail [App Password](https://myaccount.google.com/apppasswords), not your login password |
+| `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical site URL, e.g. `https://your-app.vercel.app` |
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this repository to GitHub.
+2. Import the project at [vercel.com/new](https://vercel.com/new).
+3. Keep Framework Preset as **Next.js**.
+4. Add the environment variables above in Project Settings → Environment Variables.
+5. Deploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vercel detects Next.js automatically. No `vercel.json` is required.
+
+After the first deploy, set `NEXT_PUBLIC_SITE_URL` to the production domain and redeploy so sitemap, robots, and Open Graph URLs are correct.
+
+## Production checks
+
+```bash
+npm run lint
+npm run build
+npm start
+```

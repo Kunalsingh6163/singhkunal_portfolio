@@ -2,6 +2,9 @@
   "name": "kunal_portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,10 +12,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.0",
     "@mui/material": "^7.0.0",
+    "@mui/material-nextjs": "^9.5.0",
     "next": "15.3.0",
     "nodemailer": "^6.10.1",
     "react": "^19.0.0",

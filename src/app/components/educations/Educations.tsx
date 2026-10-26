@@ -43,6 +43,7 @@ function Educations() {
                       alt={education.university}
                       width={96}
                       height={96}
+                      sizes="96px"
                       style={{ objectFit: "contain" }}
                     />
                   </Box>

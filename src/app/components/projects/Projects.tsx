@@ -45,6 +45,7 @@ function Projects() {
                   alt={project.title}
                   width={260}
                   height={150}
+                  sizes="(max-width: 900px) 70vw, 260px"
                   style={{ maxHeight: "138px", maxWidth: "100%", objectFit: "contain" }}
                 />
               </Box>

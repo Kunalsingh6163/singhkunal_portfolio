@@ -92,6 +92,7 @@ function Hero() {
                   width={680}
                   height={780}
                   priority
+                  sizes="(max-width: 900px) 100vw, 480px"
                   style={{ display: "block", height: "auto", width: "100%" }}
                 />
               </Box>
